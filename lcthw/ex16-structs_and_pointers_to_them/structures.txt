@@ -1,0 +1,7 @@
+A struct is a precursor to an object. The struct and its elements are all in the same chunk of RAM.
+A structure is a collection of other data types (variables) that are stored in one block of memory where you can access each variable independently by name.
+
+Pointer:
+ptr->elem   Use ptr to struct/union to get elem
+
+Malloc: memory allocator, it saves a bit of RAM for later use.

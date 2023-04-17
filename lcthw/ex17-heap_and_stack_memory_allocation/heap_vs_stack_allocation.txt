@@ -1,0 +1,16 @@
+The Heap is all the remaining memory in your computer. Using malloc() to register a piece of memory for use, the CPU returns a pointer for you to use. 
+When it is no longer needed, you can free the memory with free(). If you do not, there is a change for memory leakage.
+
+The Stack us a special region of memory that stores temporary variables, which each function creates as locals to that function.
+Each argument of a function is pushed onto the stack, it's really a stack data structure working in a LIFO manner.
+Meaning Last In First Out, so the first thing pushed onto the stack gets popped as last one.
+The local variables of the funcion also get pushed onto the stack.
+The reason the stack exists like this is for the CPU to pop everything off the stack onces it is done.
+Which is simple and prevents memory leaks.
+
+Remember: "If you didn't get it from malloc(), or a function that got it from malloc(), then it's on the stack."
+
+There are three primary problems with heap and stack:
+1. If you get a block of memory from malloc, and have that pointer on the stack, then when the function exits the pointer will get popped off and lost.
+2. If you put too much data on the stack (like large structs and arrays), then you can cause a stack overflow and the program will abort. In this case, use the heap with malloc.
+3. If you take a pointer to something on the stack, and then pass or return it from your function, then the function receiving it will segmentation fault (segfault), because the actual data will get popped off and disappear. You'll be pointing at dead space.

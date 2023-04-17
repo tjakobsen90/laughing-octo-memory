@@ -1,0 +1,32 @@
+Een definition is een function.
+
+def animal('name', 'age'):
+	print "The animals name is: %s and it is %s years old." % (name, age)
+
+
+Een class is een verzameling functions.
+
+class Vet(self):
+	def...
+
+Een import is een class uit een andere programma/bestand genaamd een module.
+import from sys
+
+Functions in een class heten methods.
+
+Een class andere classes onder zich hebben (subclass).
+
+class Vet(self):
+
+	def...
+
+	class Male(self):
+		def...
+
+	class Female(self):
+		def...
+
+Zodra een class in een object/variable wordt geplaats heb je een instance.
+person = Vet(self)
+person.Vet('henk', 'man')
+

@@ -1,0 +1,63 @@
+# List of C operators
+
+## Arithmetic operators
++	Add
+-	Subtract
+*	Multiply
+/	Divide
+%	Modulus
+++	Increment
+--	Decrement
+
+## Relational operators
+==	Equal
+!=	Not equal
+>	Greater than
+<	Less than
+>=	Greater than equal
+<=	Less than equal
+
+## Logical operators
+&&	Logical and
+||	Logical or
+|	Logical not
+? ;	Logical ternary
+
+## Bitwise operators
+&	Bitwise and
+|	Bitwise or
+^	Bitwise xor
+~	Bitwise one's complement
+<<	Bitwise shift left
+>>	Bitwise shift right
+
+## Assignment operators
+=	Assign equal
++=	Assign plus-equal
+-=	Assign minus-equal
+*=	Assign multiply-equal
+/=	Assign divide-equal
+%=	Assign modulus-equal
+<<=	Assign shift-left-equal
+>>=	Assign shift-right-equal
+&=	Assign and-equal
+^=	Assign xor-equal
+|=	Assign or-equal
+
+## Data operators
+sizeof() Get the size of
+[ ]	Array subscript
+&	The address of
+*	The value of
+->	Structure dereference
+.	Structure reference
+
+## Miscellaneous operators
+,	Comma
+( )	Parentheses
+{ }	Braces
+:	Colon
+//	Single-line comment start
+/*	Multi-line comment start
+*/	Multi-line comment end
+

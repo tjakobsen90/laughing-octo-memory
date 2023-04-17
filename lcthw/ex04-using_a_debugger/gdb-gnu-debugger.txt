@@ -1,0 +1,61 @@
+# GDB - GNU Debugger
+
+## GDB tricks
+$ gdb --args
+Pass the arguments to the program that is being debugged, instead of GDB itself.
+
+$ gdb --batch --ex re --ex bt --ex q --args
+Run the program so that if it bombs, you get a backtrace.
+
+(gdb) thread apply all bt
+Dump a backtrace for all the threads.
+
+## GDB quick reference
+(gdb) run [args]
+Start your program with args.
+
+(gdb) break [file:]function
+Set a breakpoint at [file:]function, you can also use b.
+
+(gdb) backtrace
+Dump a backtrace of the current calling stack. Short is bt.
+
+(gdb) print expr
+Print the value of expr, short is p.
+
+(gdb) continue
+Continue running the program, short is c.
+
+(gdb) next
+Next line, step over function calls. Short is n.
+
+(gdb) step
+Next line, step into function calls. Short is s.
+
+(gdb) quit
+Exit GBD.
+
+(gdb) help
+Get help/manual.
+
+(gdb) cd, pwd, make
+Same as the shell commands.
+
+(gdb) shell
+Quickly start a shell for other things.
+
+(gdb) clear
+Clear a breakpoint.
+
+(gdb) info break, info watch
+Show information about breakpoints and watchpoints.
+
+(gdb) attach pid
+Attach a running process so you can debug it.
+
+(gdb) detach
+Detach from the process.
+
+(gdb) list
+List out the next 10 source lines, add a - for the previous 10 lines.
+

@@ -1,0 +1,5 @@
+# splint
+Show improvements for the source code.
+
+# valgrind
+Dump memory and get more verbose logging about errors. It needs the -g at compilation. Usefull to find memory leaks.

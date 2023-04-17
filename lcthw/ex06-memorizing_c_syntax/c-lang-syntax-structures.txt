@@ -1,0 +1,96 @@
+# Syntax reference
+
+1. ALLCAPS is a replacement
+2. [ALLCAPS] is optional
+
+## if-statement
+if (TEST) {
+    CODE;
+} else if (TEST) {
+    CODE;
+} else {
+    CODE;
+}
+
+## switch-statement
+switch (OPERAND) {
+    CASE CONSTANT:
+        CODE;
+        break;
+    default:
+        CODE;
+}
+
+## while-loop
+while (TEST) {
+    CODE;
+}
+
+## while-continue-loop
+while (TEST) {
+    if (OTHER_TEST) {
+        continue;
+    }
+    CODE;
+}
+
+## while-break-loop
+while (TEST) {
+    if (OTHER_TEST) {
+        break;
+    }
+    CODE;
+}
+
+## do-while-loop
+do {
+    CODE;
+} while (TEST);
+
+## for-loop
+for (INIT; TEST; POST) {
+    CODE;
+}
+
+## Integer constants
+enum { CONST1, CONST2, CONST3 } NAME;
+
+## goto
+if (ERROR_TEST) {
+    goto fail;
+}
+
+fail:
+    CODE;
+
+## Function definition
+TYPE NAME(ARG1, ARGS2, ...) {
+    CODE;
+    return VALUE;
+}
+
+-----
+int name(arg1, arg2) {
+    CODE;
+    return 0;
+}
+## typedef
+typedef DEFINITION IDENTIFIER;
+
+-----
+typedef unsigned char byte;
+
+## struct
+struct NAME {
+    ELEMENTS;
+} [VARIABLE_NAME]
+
+-----
+typedef struct [STRUCT_NAME] {
+    ELEMENTS;
+} IDENTIFIER;
+
+## union
+union NAME {
+    ELEMENTS;
+} [VARIABLE_NAME]

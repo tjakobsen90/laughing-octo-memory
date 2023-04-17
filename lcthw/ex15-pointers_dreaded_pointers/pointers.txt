@@ -1,0 +1,20 @@
+An array of integers is, to C, a location in the computer's memory where all these integers start. It's an address. Each individual integer in the array (index) has it's own address. C thinks you whole computer is one  massive array of bytes. What C does is layer on top of this massive array of bytes the concept of types and sizes.
+
+The purpose of a pointer is to let you manually index data into blocks of memory when an array won't do it right. In almost all other cases, you actually want to use an array. But, there are times when you have to work with a raw block of memory and that's where a pointer comes in. A pointer gives you raw, direct access to a block of memory so you can work with it.
+
+Practical use cases:
+- Create a chunk of memory and use a pointer to work with it;
+- Pass large blocks of memory to a function with a pointer;
+- Dynamic callback, the address of a function;
+- Scan complex chuncks of memory.
+
+Pointer lexicon
+type *ptr               A pointer of type named ptr
+*ptr                    The value of whatever ptr is pointed at
+*(ptr + i)              The value of whatever ptr is pointed at plus i
+&thing                  The address of thing
+type *ptr = &thing      A pointer of type named ptr set to the address of thing
+ptr++                   Increment where ptr points
+ptr->elem               Use ptr to struct/union to get elem
+
+Pointer aren't arrays!
